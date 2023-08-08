@@ -19,3 +19,8 @@ class StudentList(ListView):
     context_object_name='ASO'
     # queryset=Student.objects.all()
     ordering=['id']
+
+class SchoolDetail(DetailView):
+    model=School
+    context_object_name='DOSI'
+    # template_name='App/school_detail.html'

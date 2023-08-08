@@ -9,7 +9,7 @@
     <center>
         <h1> Displaying all objects of School Model using ListView of ClsBasedViews </h1>
         {% for scl in ASO %}
-            <h1>{{scl.name}}</h1>
+        <a href="{{scl.pk}}"><h1>{{scl.name}}</h1></a>
         {% endfor %}
     </center>
 </body>
