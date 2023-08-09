@@ -30,3 +30,10 @@ class StudentDetail(DetailView):
     context_object_name='DOSI'
     # template_name='App/school_detail.html'
 
+class SchoolCreate(CreateView):
+    model=School
+    fields='__all__'
+
+class StudentCreate(CreateView):
+    model=Student
+    fields='__all__' 

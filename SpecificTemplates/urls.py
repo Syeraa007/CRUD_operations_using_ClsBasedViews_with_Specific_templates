@@ -23,7 +23,8 @@ urlpatterns = [
     # Static URL Suffixes(Normal URLs)
     path('SchoolList/',SchoolList.as_view(),name='SchoolList'),
     path('StudentList/',StudentList.as_view(),name='StudentList'),
-  
+    path('SchoolCreate/',SchoolCreate.as_view(),name='SchoolCreate'),
+    path('StudentCreate/',StudentCreate.as_view(),name='StudentCreate'),
 
     # Dynamic URL Suffixes(Canonical URLs)
     re_path('(?P<pk>\d+)/',SchoolDetail.as_view(),name='SchoolDetail'),
