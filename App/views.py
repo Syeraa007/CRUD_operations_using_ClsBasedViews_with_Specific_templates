@@ -24,3 +24,9 @@ class SchoolDetail(DetailView):
     model=School
     context_object_name='DOSI'
     # template_name='App/school_detail.html'
+
+class StudentDetail(DetailView):
+    model=Student
+    context_object_name='DOSI'
+    # template_name='App/school_detail.html'
+

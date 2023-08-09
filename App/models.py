@@ -24,4 +24,4 @@ class Student(models.Model):
         return self.Sname
     
     def get_absolute_url(self):
-        return reverse('StudentDetail',kwargs={'psk':self.pk})
+        return reverse('StudentDetail',kwargs={'name':self.pk})

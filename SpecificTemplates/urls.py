@@ -23,7 +23,9 @@ urlpatterns = [
     # Static URL Suffixes(Normal URLs)
     path('SchoolList/',SchoolList.as_view(),name='SchoolList'),
     path('StudentList/',StudentList.as_view(),name='StudentList'),
+  
 
     # Dynamic URL Suffixes(Canonical URLs)
     re_path('(?P<pk>\d+)/',SchoolDetail.as_view(),name='SchoolDetail'),
+    re_path('(?P<name>\d+)/',StudentDetail.as_view(),name='StudentDetail'),
 ]
