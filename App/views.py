@@ -37,3 +37,11 @@ class SchoolCreate(CreateView):
 class StudentCreate(CreateView):
     model=Student
     fields='__all__' 
+
+class SchoolUpdate(UpdateView):
+    model=School
+    fields='__all__'
+
+class StudentUpdate(UpdateView):
+    model=Student
+    fields='__all__'

@@ -12,6 +12,8 @@
 
         <h2>Name of the Student is {{DSI.Sname}} </h2>
         <h2>Age of the Student is {{DSI.age}} </h2>
+
+        <a href="{% url 'StudentUpdate' pk=DSI.pk %}">Update Student</a>
     </center>
 </body>
 </html>
