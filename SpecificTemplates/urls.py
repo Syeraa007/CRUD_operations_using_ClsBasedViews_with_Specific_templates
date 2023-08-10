@@ -29,6 +29,7 @@ urlpatterns = [
     # Dynamic URL Suffixes(Canonical URLs)
     re_path('^update/(?P<pk>\d+)/',SchoolUpdate.as_view(),name='SchoolUpdate'),
     re_path('^update/(?P<name>\d+)/',StudentUpdate.as_view(),name='StudentUpdate'),
+    re_path('^delete/(?P<pk>\d+)/',SchoolDelete.as_view(),name='SchoolDelete'),
     re_path('(?P<pk>\d+)/',SchoolDetail.as_view(),name='SchoolDetail'),
     re_path('(?P<name>\d+)/',StudentDetail.as_view(),name='StudentDetail'),
 ]

@@ -27,7 +27,7 @@ class SchoolDetail(DetailView):
 
 class StudentDetail(DetailView):
     model=Student
-    context_object_name='DOSI'
+    context_object_name='DSI'
     # template_name='App/school_detail.html'
 
 class SchoolCreate(CreateView):
@@ -45,3 +45,13 @@ class SchoolUpdate(UpdateView):
 class StudentUpdate(UpdateView):
     model=Student
     fields='__all__'
+
+class SchoolDelete(DeleteView):
+    model = School
+    context_object_name='DOSI'
+    # success_url=reverse_lazy('SchoolList')
+
+class StudentDelete(DeleteView):
+    model = Student
+    context_object_name='DSI'
+    # success_url=reverse_lazy('StudentList')
